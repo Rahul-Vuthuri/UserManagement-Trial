@@ -19,7 +19,7 @@ public class EmployeeController {
     @GetMapping("/")
     public String viewHomePage(Model model) {
         model.addAttribute("employees", employeeService.getAllEmployees());
-        return "employeeList"; // name of your HTML view
+        return "list"; // name of your HTML view
     }
 
     @GetMapping("/showAddForm")
